@@ -473,7 +473,7 @@
 				ORGANIZATIONNAME = "Liao KuoHsun";
 				TargetAttributes = {
 					9A860453187BE29300BA82BA = {
-						DevelopmentTeam = 7GD32M775H;
+						DevelopmentTeam = YNRT7RAF79;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -490,6 +490,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -694,12 +695,14 @@
 				CODE_SIGN_ENTITLEMENTS = FFmpegAudioRecorder/FFmpegAudioRecorder.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = YNRT7RAF79;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FFmpegAudioRecorder/FFmpegAudioRecorder-Prefix.pch";
+				HEADER_SEARCH_PATHS = "/Users/jichao/work/project/audio/FFmpegAudioRecorder/FFmpegAudioRecorder/include\n";
 				INFOPLIST_FILE = "FFmpegAudioRecorder/FFmpegAudioRecorder-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = "alb.appstore.${PRODUCT_NAME:rfc1034identifier}";
+				LIBRARY_SEARCH_PATHS = /Users/jichao/work/project/audio/FFmpegAudioRecorder/FFmpegAudioRecorder;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jichao.audio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -716,12 +719,14 @@
 				CODE_SIGN_ENTITLEMENTS = FFmpegAudioRecorder/FFmpegAudioRecorder.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = YNRT7RAF79;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FFmpegAudioRecorder/FFmpegAudioRecorder-Prefix.pch";
+				HEADER_SEARCH_PATHS = "/Users/jichao/work/project/audio/FFmpegAudioRecorder/FFmpegAudioRecorder/include\n";
 				INFOPLIST_FILE = "FFmpegAudioRecorder/FFmpegAudioRecorder-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = "alb.appstore.${PRODUCT_NAME:rfc1034identifier}";
+				LIBRARY_SEARCH_PATHS = /Users/jichao/work/project/audio/FFmpegAudioRecorder/FFmpegAudioRecorder;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jichao.audio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;

@@ -1096,7 +1096,7 @@
     pAVFrame1 = av_frame_alloc();
     av_init_packet(&AudioPacket);
     
-    int buffer_size = 192000 + FF_INPUT_BUFFER_PADDING_SIZE;
+    int buffer_size = 192000 + AV_INPUT_BUFFER_PADDING_SIZE;
     uint8_t buffer[buffer_size];
     memset(buffer, 0, buffer_size);
     AudioPacket.data = buffer;
@@ -1754,7 +1754,8 @@ void sendPacket(AVPacket *pPkt)
     
     
     // init resampling
-    src_nb_samples = pOutputCodecContext->codec->capabilities & CODEC_CAP_VARIABLE_FRAME_SIZE ?10000 : pOutputCodecContext->frame_size;
+//    src_nb_samples = pOutputCodecContext->codec->capabilities & CODEC_CAP_VARIABLE_FRAME_SIZE ?10000 : pOutputCodecContext->frame_size;
+    src_nb_samples = pOutputCodecContext->frame_size;
 	vRet = av_samples_alloc_array_and_samples(&src_samples_data,
                                               &src_samples_linesize, pOutputCodecContext->channels, src_nb_samples, AV_SAMPLE_FMT_FLTP,0);
 	if (vRet < 0) {
@@ -1780,7 +1781,7 @@ void sendPacket(AVPacket *pPkt)
     
     if(pRecordingAudioFC->oformat->flags & AVFMT_GLOBALHEADER)
     {
-        pOutputCodecContext->flags |= CODEC_FLAG_GLOBAL_HEADER;
+//        pOutputCodecContext->flags |= CODEC_FLAG_GLOBAL_HEADER;
     }
     
     if ( !( pRecordingAudioFC->oformat->flags & AVFMT_NOFILE ) )

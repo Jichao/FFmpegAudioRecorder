@@ -105,7 +105,8 @@
     
     
     // init resampling
-   src_nb_samples = pAVCodecCtxForEncode->codec->capabilities & CODEC_CAP_VARIABLE_FRAME_SIZE ?10000 : pAVCodecCtxForEncode->frame_size;
+//   src_nb_samples = pAVCodecCtxForEncode->codec->capabilities & CODEC_CAP_VARIABLE_FRAME_SIZE ?10000 : pAVCodecCtxForEncode->frame_size;
+    src_nb_samples = pAVCodecCtxForEncode->frame_size;
 	vRet = av_samples_alloc_array_and_samples(&src_samples_data,
                                               &src_samples_linesize, pAVCodecCtxForEncode->channels, src_nb_samples, vSrcFormat,0);
 	if (vRet < 0) {

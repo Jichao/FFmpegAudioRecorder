@@ -170,7 +170,7 @@ int m4a_file_create(const char *pFilePath, AVFormatContext *fc, AVCodecContext *
     
     if(fc->oformat->flags & AVFMT_GLOBALHEADER)
     {
-        pAudioOutputCodecContext->flags |= CODEC_FLAG_GLOBAL_HEADER;
+//        pAudioOutputCodecContext->flags |= CODEC_FLAG_GLOBAL_HEADER;
     }
     
     if ( !( fc->oformat->flags & AVFMT_NOFILE ) )

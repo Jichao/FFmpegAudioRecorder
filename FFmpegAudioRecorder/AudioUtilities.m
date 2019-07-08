@@ -557,7 +557,7 @@
     pAVFrame1 = av_frame_alloc();
     av_init_packet(&AudioPacket);
     
-    int buffer_size = 192000 + FF_INPUT_BUFFER_PADDING_SIZE;
+    int buffer_size = 192000 + AV_INPUT_BUFFER_PADDING_SIZE;
     uint8_t buffer[buffer_size];
     AudioPacket.data = buffer;
     AudioPacket.size = buffer_size;
