@@ -69,7 +69,7 @@
             [pEncodeFormat addObject:[NSNumber numberWithInteger:eRecFmt_MULAW]];
             [pEncodeFormat addObject:[NSNumber numberWithInteger:eRecFmt_ALAW]];
             [pEncodeFormat addObject:[NSNumber numberWithInteger:eRecFmt_PCM]];
-            vEncodeFormatNumber = 6;
+            vEncodeFormatNumber = 4;
             break;
             
         case eRecMethod_FFmpeg:
